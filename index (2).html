@@ -1,0 +1,375 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Ahana Roy · Graphic Designer</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Portfolio of Ahana Roy, graphic designer creating stories behind the screen: social media, branding and print.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&family=Marcellus&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
+<style>
+/* Site palette: black + two colours only. Project artwork keeps its own colours. */
+:root{--bg:#000000;--lav:#9189f1;--mint:#b3f6b2;--fg:#ffffff;--acc:var(--lav);color-scheme:dark;box-sizing:border-box}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:76px;background:var(--bg)}
+body{margin:0;background:var(--bg);color:var(--fg);font:400 1.05rem/1.6 Jost,"Segoe UI",system-ui,sans-serif;transition:color .8s;overflow-x:hidden;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:Marcellus,Georgia,serif;font-weight:400;line-height:1.05;margin:0}
+h2{font-size:clamp(2.4rem,7vw,5.6rem);color:var(--acc);transition:color .8s}
+h3{font-size:1.5rem;color:var(--acc);margin-bottom:.4rem;transition:color .8s}
+p{max-width:62ch;margin:.4rem 0 0}
+img,video{max-width:100%;display:block}
+a{color:inherit}
+::selection{background:var(--lav);color:#000}
+:focus-visible{outline:3px solid var(--acc);outline-offset:3px;border-radius:4px}
+
+nav{position:fixed;top:0;left:0;right:0;z-index:20;display:flex;align-items:center;justify-content:space-between;gap:1.2rem;padding:calc(.6rem + env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) .6rem max(16px,env(safe-area-inset-left,0px));background:#000;border-bottom:1.5px solid var(--lav)}
+nav .brand{flex:none}
+nav .brand img{height:42px;width:auto;max-width:none}
+nav ul{display:flex;gap:1.3rem;list-style:none;margin:0;padding:0;overflow-x:auto;scrollbar-width:none}
+nav a{text-decoration:none;font-size:.95rem;white-space:nowrap;color:var(--fg)}
+nav a:hover{color:var(--lav)}
+
+/* hero */
+.hero{position:relative;min-height:min(100svh,880px);display:grid;place-items:start center;text-align:center;padding:7rem 0 0;overflow:hidden;isolation:isolate}
+#field{position:absolute;inset:0;width:100%;height:100%;z-index:0;touch-action:pan-y}
+.hero .in{position:relative;z-index:2;display:grid;gap:1.8rem;justify-items:center;pointer-events:none}
+.eyebrow{margin:0;font:500 .95rem Jost,sans-serif;letter-spacing:clamp(.14em,1.2vw,.34em);text-transform:uppercase;color:var(--fg);animation:rise 1s both}
+.tagline{font-size:clamp(2.5rem,8vw,6.6rem);line-height:1.02;letter-spacing:.005em;text-shadow:0 0 28px #000,0 0 10px #000}
+.tagline span{display:block;animation:rise 1s cubic-bezier(.2,.8,.2,1) both}
+.tagline .a{color:var(--lav);animation-delay:.15s}
+.tagline .b{color:var(--mint);animation-delay:.3s}
+@keyframes rise{from{opacity:0;transform:translateY(24px)}}
+/* what I do: revealed under the cursor in the lower half of the hero */
+.reveal{position:absolute;left:0;right:0;bottom:0;height:42%;z-index:1;display:flex;flex-wrap:wrap;gap:0 .5em;justify-content:center;align-content:center;padding:0 4%;font:italic 400 clamp(1.5rem,3.6vw,2.9rem)/1.2 "Instrument Serif",Georgia,serif;color:var(--fg);-webkit-mask-image:radial-gradient(circle 190px at var(--mx,-999px) var(--my,-999px),#000 96%,transparent);mask-image:radial-gradient(circle 190px at var(--mx,-999px) var(--my,-999px),#000 96%,transparent);pointer-events:none;text-shadow:0 0 18px #000}
+.what{display:none;margin:0;font:italic 400 1.4rem/1.2 "Instrument Serif",Georgia,serif;color:var(--fg)}
+@media(hover:none){.reveal{display:none}.what{display:block}}
+@media(prefers-reduced-motion:reduce){.reveal{-webkit-mask-image:none;mask-image:none}}
+
+.proj{padding:15vh 0 8vh;max-width:1280px;margin:0 auto}
+.proj>header{display:grid;gap:.6rem;margin-bottom:2.4rem}
+.proj>header p{font-size:1.15rem}
+.grid{display:grid;gap:1.6rem;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));align-items:start}
+.grid.pair{grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr))}
+.card{border-radius:14px;overflow:hidden;background:#000;border:1.5px solid var(--acc);padding:.8rem;transition:border-color .8s}
+.card img,.card video{border-radius:8px;width:100%;height:auto}
+.card figcaption,.cap{font-size:.95rem;margin-top:.7rem}
+.tilt{transition:transform .25s ease-out;will-change:transform}
+.phone{max-width:300px;justify-self:center;width:100%}
+.phone video{aspect-ratio:9/16;object-fit:cover;background:#000}
+.sq video{aspect-ratio:1/1;object-fit:cover;background:#000}
+.wide video{aspect-ratio:558/396;object-fit:cover;background:#000}
+video{cursor:pointer}
+.tabs{display:flex;gap:.5rem;flex-wrap:wrap;margin:0 0 1rem}
+.tabs button,.chip,.copy{font:500 1rem Jost,sans-serif;color:var(--fg);background:#000;border:1.5px solid var(--acc);border-radius:999px;padding:.45rem 1.1rem;cursor:pointer;transition:background .2s,color .2s,transform .2s}
+.tabs button:hover,.chip:hover,.copy:hover{transform:translateY(-2px) rotate(-1.5deg)}
+.tabs button[aria-selected=true]{background:var(--acc);color:#000}
+.pane[hidden]{display:none}
+.pane{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr))}
+.pane img{border-radius:10px;width:100%;height:auto}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1rem;margin:1.6rem 0}
+.stat b{display:block;font:400 clamp(2.6rem,6vw,4.4rem)/1 Marcellus,serif;color:var(--acc);transition:color .8s}
+.stat span{font-size:.95rem}
+.pal{display:flex;gap:.7rem;flex-wrap:wrap;margin:1rem 0}
+.sw{width:112px;height:76px;border-radius:12px;border:0;cursor:pointer;font:500 .85rem Jost;display:grid;place-items:end start;padding:.5rem;transition:transform .2s}
+.sw:hover{transform:scale(1.07) rotate(-3deg)}
+.list{list-style:none;padding:0;margin:1.2rem 0;display:grid;gap:.8rem;max-width:62ch}
+.list b{color:var(--acc);font-weight:500;transition:color .8s}
+.skills{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.6rem}
+.skills .chip{font-size:1.3rem;padding:.6rem 1.5rem;border-color:var(--lav);color:var(--fg)}
+.skills .chip:hover{background:var(--lav);color:#000}
+.contact{display:flex;gap:1.2rem;flex-wrap:wrap;align-items:center;margin-top:1.4rem}
+.contact a,.copy{font-size:1.15rem}
+.contact a{text-decoration:none;border-bottom:2px solid var(--mint)}
+footer{padding:3rem 0 5rem;text-align:center;font-size:.95rem;color:var(--fg)}
+footer img{height:84px;width:auto;margin:0 auto 1rem}
+#dot{position:fixed;left:0;top:0;width:18px;height:18px;margin:-9px 0 0 -9px;border-radius:50%;background:var(--mint);z-index:50;pointer-events:none;transition:width .25s,height .25s,margin .25s}
+#dot.big{width:46px;height:46px;margin:-23px 0 0 -23px;background:var(--lav)}
+@media(hover:none){#dot{display:none}}
+#toast{position:fixed;left:50%;bottom:calc(1.5rem + env(safe-area-inset-bottom,0px));transform:translate(-50%,40px);background:var(--mint);color:#000;padding:.6rem 1.2rem;border-radius:999px;opacity:0;transition:.3s;z-index:60;font-weight:500}
+#toast.on{opacity:1;transform:translate(-50%,0)}
+.hero-logo{height:72px;width:auto;margin:0 0 -.9rem;animation:rise 1s both}
+.grid.mapin{grid-template-columns:minmax(0,300px) minmax(0,340px);justify-content:center;gap:2.4rem}
+.grid.mapin .reel{max-width:300px}
+@media(max-width:760px){.grid.mapin{grid-template-columns:minmax(0,340px)}}
+/* instagram-in-a-phone mockup */
+.ig{width:100%;max-width:340px;margin:0;justify-self:center}
+.ig-wrap{display:flex;justify-content:center;margin-top:3rem}
+.ig-phone{background:#000;border:2px solid var(--lav);border-radius:42px;padding:10px}
+.ig-screen{background:#000;border-radius:32px;overflow:hidden;border:1px solid var(--lav);color:#fff;font:400 .8rem/1.35 Jost,sans-serif}
+.ig svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;display:block;flex:none}
+.ig-status{display:flex;align-items:center;justify-content:space-between;padding:10px 20px 4px;font-size:.78rem;font-weight:500}
+.ig-status span:first-child,.ig-status span:last-child{width:34px}
+.ig-pill{width:84px;height:20px;border-radius:99px;background:#000;border:1.5px solid var(--lav)}
+.ig-top{display:grid;grid-template-columns:24px 1fr 24px;align-items:center;padding:6px 12px;font-weight:600;text-align:center;font-size:.95rem}
+.ig-head{display:flex;align-items:center;gap:.6rem;padding:8px 12px}
+.ig-av{width:30px;height:30px;border-radius:50%;border:2px solid var(--mint);display:grid;place-items:center;font-weight:600;font-size:.8rem;text-transform:uppercase;flex:none}
+.ig-name{font-weight:600;font-size:.88rem;flex:1}
+.ig-media{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;aspect-ratio:1/1;cursor:pointer;background:#000}
+.ig-media.tall{aspect-ratio:4/5}
+.ig-media::-webkit-scrollbar{display:none}
+.ig-media img{flex:0 0 100%;width:100%;height:100%;object-fit:cover;scroll-snap-align:start;border-radius:0}
+.ig-acts{position:relative;display:flex;align-items:center;gap:14px;padding:10px 12px 4px}
+.ig-acts .sp{flex:1}
+.ig-dots{position:absolute;left:50%;top:50%;transform:translate(-50%,-30%);display:flex;gap:5px}
+.ig-dots i{width:6px;height:6px;border-radius:50%;background:#fff;opacity:.35}
+.ig-dots i.on{background:var(--mint);opacity:1}
+.ig-cap{margin:0;padding:6px 12px 10px;max-width:none;font-size:.82rem}
+.ig-nav{display:flex;justify-content:space-around;align-items:center;padding:10px 6px 14px;border-top:1px solid var(--lav)}
+.ig-nav .ig-av{width:24px;height:24px;border-width:1.5px;font-size:.65rem}
+.ig figcaption{text-align:center;margin-top:.9rem;font-size:.95rem}
+@media(max-width:480px){.eyebrow{font-size:.78rem;letter-spacing:.16em}.hero-logo{height:60px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+</style>
+<div id="dot" aria-hidden="true"></div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="i-back" viewBox="0 0 24 24"><path d="M15 4l-8 8 8 8"/></symbol>
+<symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-9.5-9.2C1.3 8.8 3 5.5 6.2 5.5c2 0 3.4 1.1 5.8 3.6 2.4-2.5 3.8-3.6 5.8-3.6 3.2 0 4.9 3.3 3.7 6.3C19.5 16.4 12 21 12 21z"/></symbol>
+<symbol id="i-comment" viewBox="0 0 24 24"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.5L3 20.5l1.5-5.4A8.5 8.5 0 1 1 21 11.5z"/></symbol>
+<symbol id="i-send" viewBox="0 0 24 24"><path d="M21.5 3L2.8 10.2l7 2.6 2.6 7L21.5 3zM9.8 12.8L21.5 3"/></symbol>
+<symbol id="i-bookmark" viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4.5L6 21z"/></symbol>
+<symbol id="i-home" viewBox="0 0 24 24"><path d="M3 11l9-8 9 8v10h-6v-6H9v6H3z"/></symbol>
+<symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M16 16l5 5"/></symbol>
+<symbol id="i-plus" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><path d="M12 8v8M8 12h8"/></symbol>
+<symbol id="i-reel" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><path d="M3 9h18M9 3l3 6M15 3l3 6M10.5 12.5v5l4-2.5z"/></symbol>
+</defs></svg>
+<nav aria-label="Main">
+  <a class="brand" href="#top" aria-label="Ahana Roy, home"><img src="img/logo.png" width="1680" height="1068" alt="ahana roy logo"></a>
+  <ul>
+    <li><a href="#nift">NIFT</a></li><li><a href="#unifest">Unifest</a></li><li><a href="#metroball">Metroball</a></li>
+    <li><a href="#invite">Wedding invite</a></li><li><a href="#katha">Katha’s</a></li><li><a href="#mapin">Mapin</a></li><li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<main id="top">
+<section class="hero" data-theme="a" aria-label="Introduction">
+  <canvas id="field" aria-hidden="true"></canvas>
+  <div class="in">
+    <img class="hero-logo" src="img/logo.png" width="1680" height="1068" alt="ahana roy">
+    <p class="eyebrow">designer and creator</p>
+    <h1 class="tagline"><span class="a">creating stories,</span><span class="b">behind the screen</span></h1>
+    <p class="what">reels · posts · posters · brands · invites</p>
+  </div>
+  <div class="reveal" aria-hidden="true"><span>reels</span><span>posts</span><span>posters</span><span>brands</span><span>invites</span></div>
+</section>
+
+<section class="proj" id="nift" data-theme="b">
+  <header>
+    <h2>Social media at NIFT</h2>
+    <p>Reels, event stories and posts for campus life.</p>
+  </header>
+  <div class="stats" id="stats">
+    <div class="stat"><b data-n="3" data-s="M">3M</b><span>views, “Dress like an Indian meme” reel</span></div>
+    <div class="stat"><b data-n="1.3" data-s="M">1.3M</b><span>views, Spectrum’24 call for participants</span></div>
+    <div class="stat"><b data-n="36.8" data-s="K">36.8K</b><span>views, Spectrum’24 on campus</span></div>
+    <div class="stat"><b data-n="36.5" data-s="K">36.5K</b><span>views, “Trash to Fash” reel</span></div>
+  </div>
+  <figure class="card tilt" style="margin:0"><img src="img/nift-wall.jpg" width="1734" height="530" alt="A wall of NIFT social posts and reels with view counts, including 3M and 1.3M" loading="lazy" decoding="async"></figure>
+  <ul class="list">
+    <li><b>Content creation and virality.</b> Shot, edited and published reels that drew strong engagement and went viral.</li>
+    <li><b>Event coverage.</b> Attended events and posted stories in real time.</li>
+    <li><b>Post design.</b> Designed visually appealing, impactful posts, such as the artisan series.</li>
+    <li><b>Secretary.</b> Led a team of 20+.</li>
+    <li><b>Meta ads.</b> Facilitated the Meta ads process during admissions.</li>
+  </ul>
+</section>
+
+<section class="proj" id="unifest" data-theme="a">
+  <header>
+    <h2>Unifest</h2>
+    <p>Event-focused social media strategy for @unifest.in, a student-centric ticketing and events platform in Hyderabad. Promos, teasers, posts and the co-founder’s business card.</p>
+  </header>
+  <div class="grid pair">
+    <figure class="card sq tilt" style="margin:0"><video data-auto muted loop playsinline preload="auto" src="vid/metroball.mp4" aria-label="Metroball coming soon reel"></video><figcaption>Event teaser reel (1:1)</figcaption></figure>
+    <figure class="card sq tilt" style="margin:0"><video data-auto muted loop playsinline preload="auto" src="vid/unifest.mp4" aria-label="Animated Unifest promo"></video><figcaption>Animated promo: “Are you ready to experience college life to the fullest?”</figcaption></figure>
+  </div>
+  <div class="ig-wrap"><figure class="ig">
+    <div class="ig-phone"><div class="ig-screen">
+      <div class="ig-status"><span>9:41</span><span class="ig-pill"></span><span></span></div>
+      <div class="ig-top"><svg aria-hidden="true"><use href="#i-back"/></svg><b>Posts</b><span></span></div>
+      <div class="ig-head"><span class="ig-av">u</span><span class="ig-name">unifest.in</span><span aria-hidden="true">···</span></div>
+      <div class="ig-media"><img src="img/unifest-slide-1.jpg" width="970" height="970" alt="Unifest post: Are you ready to experience college life to the fullest?" loading="lazy" decoding="async"><img src="img/unifest-slide-2.jpg" width="970" height="970" alt="Unifest post: Why Unifest?" loading="lazy" decoding="async"></div>
+      <div class="ig-acts"><svg aria-hidden="true"><use href="#i-heart"/></svg><svg aria-hidden="true"><use href="#i-comment"/></svg><svg aria-hidden="true"><use href="#i-send"/></svg><span class="ig-dots"><i class="on"></i><i></i></span><span class="sp"></span><svg aria-hidden="true"><use href="#i-bookmark"/></svg></div>
+      <p class="ig-cap"><b>unifest.in</b> Event posts: the red circle carries every slide of the carousel.</p>
+      <div class="ig-nav"><svg aria-hidden="true"><use href="#i-home"/></svg><svg aria-hidden="true"><use href="#i-search"/></svg><svg aria-hidden="true"><use href="#i-plus"/></svg><svg aria-hidden="true"><use href="#i-reel"/></svg><span class="ig-av">u</span></div>
+    </div></div>
+    <figcaption>Event posts. Click or swipe through the carousel.</figcaption>
+  </figure></div>
+
+  <h3 style="margin-top:3.5rem">Co-founder business card</h3>
+  <p>Switch between the first drafts, the final design and how it looks in print.</p>
+  <div class="tabset" style="margin-top:1rem">
+    <div class="tabs" role="tablist">
+      <button role="tab" aria-selected="true" data-t="a">Initial drafts</button>
+      <button role="tab" aria-selected="false" data-t="b">Final</button>
+      <button role="tab" aria-selected="false" data-t="c">Mockup</button>
+    </div>
+    <div class="pane" data-t="a" style="grid-template-columns:1fr"><img src="img/card-drafts.jpg" width="1700" height="1540" alt="Six business card drafts in black and red" loading="lazy" decoding="async" style="max-width:760px"></div>
+    <div class="pane" data-t="b" hidden style="grid-template-columns:1fr"><img src="img/card-final.jpg" width="2000" height="578" alt="Final business card, front with logo and back with contact details and crowd illustration" loading="lazy" decoding="async"></div>
+    <div class="pane" data-t="c" hidden style="grid-template-columns:1fr"><img src="img/card-mockup.jpg" width="1800" height="1312" alt="Business card mockup on a white desk" loading="lazy" decoding="async" style="max-width:860px"></div>
+  </div>
+</section>
+
+<section class="proj" id="metroball" data-theme="b">
+  <header>
+    <h2>Metroball</h2>
+    <p>Teaser for university basketball events across Hyderabad, hosted with Unifest. The type does the heavy lifting: a tightly condensed sans in all caps, stretched near full width. A central basketball splits “NOV” and “2024”.</p>
+  </header>
+  <div class="grid">
+    <figure class="card tilt" style="margin:0"><img src="img/metroball-board.jpg" width="2000" height="1124" alt="Event teaser design board with Metroball wordmark, palette and basketball icon" loading="lazy" decoding="async"><figcaption>Design board</figcaption></figure>
+    <figure class="card tilt" style="margin:0"><img src="img/metroball-post.jpg" width="1400" height="1402" alt="Final Metroball coming soon post on a blue basketball court" loading="lazy" decoding="async"><figcaption>Final post</figcaption></figure>
+  </div>
+  <div class="pal" aria-label="Metroball palette, click to copy">
+    <button class="sw" style="background:#66758A;color:#fff" data-copy="#66758A">#66758A</button>
+    <button class="sw" style="background:#E4E2DD;color:#222" data-copy="#E4E2DD">#E4E2DD</button>
+  </div>
+  <p class="cap">The project’s own palette. Click a swatch to copy the hex.</p>
+</section>
+
+<section class="proj" id="invite" data-theme="a">
+  <header>
+    <h2>Personalized wedding invite</h2>
+    <p>A postcard-style invite for Sumedha &amp; Rajarshi, rooted in Kolkata: the Howrah Bridge, a yellow taxi, conch shells, fairy lights and a Bengali hashtag, #SuShiKeBhalobashi.</p>
+  </header>
+  <div class="tabset">
+    <div class="tabs" role="tablist">
+      <button role="tab" aria-selected="true" data-t="a">The postcard</button>
+      <button role="tab" aria-selected="false" data-t="b">Wedding &amp; reception</button>
+      <button role="tab" aria-selected="false" data-t="c">In hand</button>
+    </div>
+    <div class="pane" data-t="a" style="grid-template-columns:1fr"><img src="img/invite-postcard.jpg" width="1420" height="494" alt="Invite front with Jamini Roy style couple on a stamp" loading="lazy" decoding="async" style="max-width:760px"></div>
+    <div class="pane" data-t="b" hidden style="grid-template-columns:1fr"><img src="img/invite-panels.jpg" width="2000" height="704" alt="Wedding and reception panels with Howrah Bridge and yellow taxi" loading="lazy" decoding="async"></div>
+    <div class="pane" data-t="c" hidden><img src="img/invite-hand-1.jpg" width="1328" height="1006" alt="Invite held in hand with envelope" loading="lazy" decoding="async"><img src="img/invite-hand-2.jpg" width="1368" height="1012" alt="Invite front and back on a table" loading="lazy" decoding="async"></div>
+  </div>
+  <figure class="card wide tilt" style="margin:2.4rem 0 0;max-width:720px"><video data-auto muted loop playsinline preload="auto" src="vid/freelance.mp4" aria-label="Animated wedding invitation video"></video><figcaption>The invite as an animated video</figcaption></figure>
+</section>
+
+<section class="proj" id="katha" data-theme="a">
+  <header>
+    <h2>Katha’s Film Studio</h2>
+    <p>Branding for a studio inspired by Bengali cinema. The logo joins the Bengali word কথা and “Katha” into one lettermark. Posters follow: a hiring call and a campaign that says every frame tells a story.</p>
+  </header>
+  <div class="grid">
+    <figure class="card tilt" style="margin:0"><img src="img/katha-logo.jpg" width="760" height="720" alt="কথা plus Katha equals the Roy Katha’s Studios logo" loading="lazy" decoding="async"><figcaption>কথা + Katha = the logo</figcaption></figure>
+    <figure class="card tilt" style="margin:0"><img src="img/katha-posters.jpg" width="1800" height="1408" alt="Two posters: We’re Hiring and Every Frame Tells a Story" loading="lazy" decoding="async"><figcaption>Posters</figcaption></figure>
+  </div>
+</section>
+
+<section class="proj" id="mapin" data-theme="b">
+  <header>
+    <h2>Mapin Publishing</h2>
+    <p>Social media creatives for a publisher of art and architecture books: a reel reframing Indian architecture through Mapin’s titles, and a launch post for Chola Maati.</p>
+  </header>
+  <div class="grid mapin">
+    <figure class="card phone reel tilt"><video data-auto data-speed="2" muted loop playsinline preload="auto" src="vid/mapin.mp4" aria-label="Reframing Indian Architecture with Mapin Books reel"></video><figcaption>Reel: Reframing Indian architecture (2x speed)</figcaption></figure>
+    <figure class="ig">
+      <div class="ig-phone"><div class="ig-screen">
+        <div class="ig-status"><span>9:41</span><span class="ig-pill"></span><span></span></div>
+        <div class="ig-top"><svg aria-hidden="true"><use href="#i-back"/></svg><b>Posts</b><span></span></div>
+        <div class="ig-head"><span class="ig-av">m</span><span class="ig-name">Mapin Publishing</span><span aria-hidden="true">···</span></div>
+        <div class="ig-media tall"><img src="img/mapin-post.jpg" width="1334" height="1602" alt="Chola Maati new title announcement post" loading="lazy" decoding="async"></div>
+        <div class="ig-acts"><svg aria-hidden="true"><use href="#i-heart"/></svg><svg aria-hidden="true"><use href="#i-comment"/></svg><svg aria-hidden="true"><use href="#i-send"/></svg><span class="sp"></span><svg aria-hidden="true"><use href="#i-bookmark"/></svg></div>
+        <p class="ig-cap"><b>Mapin Publishing</b> Presenting our new title, Chola Maati.</p>
+        <div class="ig-nav"><svg aria-hidden="true"><use href="#i-home"/></svg><svg aria-hidden="true"><use href="#i-search"/></svg><svg aria-hidden="true"><use href="#i-plus"/></svg><svg aria-hidden="true"><use href="#i-reel"/></svg><span class="ig-av">m</span></div>
+      </div></div>
+      <figcaption>Launch post: Chola Maati</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="proj" id="contact" data-theme="a">
+  <header>
+    <h2>Skills</h2>
+  </header>
+  <div class="skills">
+    <span class="chip">Marketing strategy</span><span class="chip">Funnel strategy &amp; optimization</span><span class="chip">Digital marketing</span><span class="chip">Brand strategy</span><span class="chip">Social media management</span><span class="chip">Meta Ads</span><span class="chip">Google Ads</span>
+  </div>
+  <h2 style="margin-top:6rem;color:var(--mint)">Contact</h2>
+  <div class="contact">
+    <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=ahana.r2005@gmail.com" target="_blank" rel="noopener">Email ahana.r2005@gmail.com</a>
+    <button class="copy" data-copy="ahana.r2005@gmail.com">Copy email</button>
+    <a href="https://www.instagram.com/awwhana/" target="_blank" rel="noopener">Instagram @awwhana</a>
+    <a href="https://www.instagram.com/limcastic/" target="_blank" rel="noopener">Instagram @limcastic</a>
+  </div>
+</section>
+</main>
+<footer><img src="img/logo.png" width="1680" height="1068" alt="ahana roy."><p>creating stories, behind the screen</p></footer>
+<div id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(function(){
+var MINT='#b3f6b2',LAV='#9189f1';
+var T={a:[MINT,LAV],b:[LAV,MINT]};
+var r=document.documentElement.style;
+function theme(n){var t=T[n]||T.a;r.setProperty('--acc',t[1])}
+var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting)theme(x.target.dataset.theme)})},{rootMargin:'-45% 0px -50% 0px'});
+document.querySelectorAll('[data-theme]').forEach(function(s){io.observe(s)});
+
+var red=matchMedia('(prefers-reduced-motion:reduce)').matches;
+
+/* custom cursor */
+var dot=document.getElementById('dot'),px=-999,py=-999,dx=0,dy=0;
+addEventListener('pointermove',function(e){px=e.clientX;py=e.clientY;dot.classList.toggle('big',!!e.target.closest('a,button,.tilt,video'))});
+(function f(){dx+=(px-dx)*.2;dy+=(py-dy)*.2;dot.style.transform='translate('+dx+'px,'+dy+'px)';requestAnimationFrame(f)})();
+
+/* hero dot field */
+var hero=document.querySelector('.hero'),cv=document.getElementById('field'),ctx=cv.getContext('2d');
+var dots=[],W=0,H=0,dpr=1,STEP=38,RAD=170,mx=-9999,my=-9999,rip=null,visible=true;
+function build(){
+  dpr=Math.min(devicePixelRatio||1,2);var b=hero.getBoundingClientRect();W=b.width;H=b.height;
+  cv.width=W*dpr;cv.height=H*dpr;ctx.setTransform(dpr,0,0,dpr,0,0);
+  dots=[];var cols=Math.ceil(W/STEP)+1,rows=Math.ceil(H/STEP)+1,ox=(W-(cols-1)*STEP)/2,oy=(H-(rows-1)*STEP)/2;
+  for(var i=0;i<cols;i++)for(var j=0;j<rows;j++){var x=ox+i*STEP,y=oy+j*STEP;dots.push({x0:x,y0:y,x:x,y:y})}
+  if(red)draw(0)
+}
+function draw(t){
+  ctx.clearRect(0,0,W,H);
+  var rr=rip?(t-rip.t)*.7:-1;if(rip&&rr>Math.hypot(W,H)){rip=null;rr=-1}
+  for(var k=0;k<dots.length;k++){
+    var d=dots[k],ddx=d.x0-mx,ddy=d.y0-my,dist=Math.hypot(ddx,ddy),tx=d.x0,ty=d.y0,rad=1.3,near=false,al=.24;
+    if(!red){
+      rad+=Math.sin(t/900+d.x0*.012+d.y0*.015)*.45+.45;
+      if(dist<RAD){var k1=1-dist/RAD;rad+=k1*4.2;al+=k1*.65;tx+=ddx/(dist||1)*k1*k1*34;ty+=ddy/(dist||1)*k1*k1*34;near=dist<RAD*.5}
+      if(rr>0){var rd=Math.abs(Math.hypot(d.x0-rip.x,d.y0-rip.y)-rr);if(rd<46){var k2=1-rd/46;rad+=k2*3.4;al+=k2*.5;near=near||k2>.5}}
+    }
+    d.x+=(tx-d.x)*.14;d.y+=(ty-d.y)*.14;
+    ctx.globalAlpha=Math.min(al,.9);ctx.fillStyle=near?MINT:LAV;ctx.beginPath();ctx.arc(d.x,d.y,rad,0,6.2832);ctx.fill();
+  }
+}
+function loop(t){if(visible)draw(t);requestAnimationFrame(loop)}
+build();addEventListener('resize',build);
+if(!red){
+  new IntersectionObserver(function(e){visible=e[0].isIntersecting}).observe(hero);
+  var rv=document.querySelector('.reveal');
+  hero.addEventListener('pointermove',function(e){var b=hero.getBoundingClientRect();mx=e.clientX-b.left;my=e.clientY-b.top;var rb=rv.getBoundingClientRect();rv.style.setProperty('--mx',(e.clientX-rb.left)+'px');rv.style.setProperty('--my',(e.clientY-rb.top)+'px')});
+  hero.addEventListener('pointerleave',function(){mx=my=-9999;rv.style.setProperty('--mx','-999px');rv.style.setProperty('--my','-999px')});
+  hero.addEventListener('pointerdown',function(e){var b=hero.getBoundingClientRect();rip={x:e.clientX-b.left,y:e.clientY-b.top,t:performance.now()}});
+  requestAnimationFrame(loop);
+}
+
+/* tilt cards */
+document.querySelectorAll('.tilt').forEach(function(c){c.addEventListener('pointermove',function(e){var b=c.getBoundingClientRect(),x=(e.clientX-b.left)/b.width-.5,y=(e.clientY-b.top)/b.height-.5;c.style.transform='perspective(800px) rotateY('+x*8+'deg) rotateX('+-y*8+'deg) scale(1.02)'});c.addEventListener('pointerleave',function(){c.style.transform=''})});
+
+/* tabs */
+document.querySelectorAll('.tabset').forEach(function(s){var b=s.querySelectorAll('button');b.forEach(function(x){x.addEventListener('click',function(){s.querySelectorAll('button').forEach(function(y){y.setAttribute('aria-selected',y===x)});s.querySelectorAll('.pane').forEach(function(p){p.hidden=p.dataset.t!==x.dataset.t})})})});
+
+/* videos: play in view, click to pause */
+var vio=new IntersectionObserver(function(e){e.forEach(function(x){var v=x.target;if(x.isIntersecting&&!v.dataset.held){v.play().catch(function(){})}else v.pause()})},{threshold:.4});
+document.querySelectorAll('video[data-auto]').forEach(function(v){vio.observe(v);v.addEventListener('click',function(){if(v.paused){v.dataset.held='';v.play().catch(function(){})}else{v.dataset.held='1';v.pause()}})});
+
+/* playback speed */
+document.querySelectorAll('video[data-speed]').forEach(function(v){var s=+v.dataset.speed;v.defaultPlaybackRate=s;v.playbackRate=s;v.addEventListener('loadedmetadata',function(){v.playbackRate=s});v.addEventListener('play',function(){v.playbackRate=s})});
+
+/* instagram carousels: swipe or click */
+document.querySelectorAll('.ig-media').forEach(function(m){var ds=m.closest('.ig-screen').querySelectorAll('.ig-dots i');function idx(){return Math.round(m.scrollLeft/m.clientWidth)}
+m.addEventListener('scroll',function(){var i=idx();ds.forEach(function(d,k){d.classList.toggle('on',k===i)})});
+m.addEventListener('click',function(){var n=m.children.length;if(n<2)return;m.scrollTo({left:((idx()+1)%n)*m.clientWidth,behavior:red?'auto':'smooth'})})});
+
+/* copy */
+var toast=document.getElementById('toast'),tt;
+function say(m){toast.textContent=m;toast.classList.add('on');clearTimeout(tt);tt=setTimeout(function(){toast.classList.remove('on')},1800)}
+document.querySelectorAll('[data-copy]').forEach(function(b){b.addEventListener('click',function(){var v=b.dataset.copy;(navigator.clipboard?navigator.clipboard.writeText(v):Promise.reject()).then(function(){say('Copied '+v)},function(){say(v)})})});
+
+/* count-up stats */
+var so=new IntersectionObserver(function(e){e.forEach(function(x){if(!x.isIntersecting)return;so.disconnect();x.target.querySelectorAll('b').forEach(function(b){if(red)return;var n=+b.dataset.n,s=b.dataset.s,t0=performance.now();(function s2(t){var p=Math.min((t-t0)/1400,1),v=n*(1-Math.pow(1-p,3));b.textContent=(n%1?v.toFixed(1):Math.round(v))+s;if(p<1)requestAnimationFrame(s2)})(t0)})})},{threshold:.5});
+so.observe(document.getElementById('stats'));
+})();
+</script>
+
+</body></html>
